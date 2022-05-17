@@ -9,16 +9,16 @@ Created using
 
 Build the image:
 ```bash
-$ docker-compose build
+docker-compose build
 ```
 
 Create the tables in Postgres
 ```bash
-$ docker-compose exec web python manage.py create_db
+docker-compose exec web python manage.py create_db
 ```
 Once the image is built, run the container:
 ```bash
-$ docker-compose up -d
+docker-compose up -d
 ```
 
 ## Run the application
@@ -30,7 +30,7 @@ To check the database tables
 
 Open psql
 ```bash
-$ docker-compose exec db psql --username=simple_web_form --dbname=simple_web_form
+docker-compose exec db psql --username=simple_web_form --dbname=simple_web_form
 ```
 Connect to database
 ```bash
